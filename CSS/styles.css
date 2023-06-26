@@ -46,3 +46,18 @@ form label {
 .imc{
 	font-size:20px;
 }
+
+@media screen and (max-width: 398px){
+
+	h2{
+		display:flex;
+		flex-wrap:wrap;
+		font-size:15px;
+	}
+	.before{
+		font-size:15px;
+	}
+	.un, .deux, .trois, .quatre, .cinq, .six{
+		max-width: 200px;
+	}
+}

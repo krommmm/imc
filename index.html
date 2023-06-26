@@ -2,7 +2,8 @@
 <html lang="fr">
 	<head>
 		<title>IMC</title>
-               <meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="./CSS/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,28 +18,43 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	</head>
 	<body>
-	<h1>Calcul de l'IMC</h1>
-	<div class="imc_container">
-		<form onsubmit="handleSubmit(event)">
-			<label>Âge</label>
-			<input type="text" class="age" placeholder="ex: 40"/>
-			<label>Taille (en centimètres)</label>
-			<input type="text" class="taille" placeholder="175"/>
-			<label>Poids (en kg)</label>
-			<input type="text" class="poids" placeholder="80"/>
-			<input type="submit" class="bouton" value="Calculer"/>
-		</form>
-		<p class="imc"><span class="number"></span></p>
-	</div>
-	<div class="imc_result">
-		<h2><span class="before">Indice de masse corporelle (IMC)</span> - Interprétation (d'après l'OMS)</h2>
-		<p class="un"><span class="before">Moins de 18,5</span> - Insuffisance pondérale (maigreur)</p>
-		<p class="deux"><span class="before">18,5 à 25</span> - Corpulence normale</p>
-		<p class="trois"><span class="before">25 à 30</span> - Surpoids</p>
-		<p class="quatre"><span class="before">30 à 35</span> - Obésité modérée</p>
-		<p class="cinq"><span class="before">35 à 40</span> - Obésité sévère</p>
-		<p class="six"><span class="before">plus de 40</span> - Obésité morbide ou massive</p>
-	</div>
+		<h1>Calcul de l'IMC</h1>
+		<div class="imc_container">
+			<form onsubmit="handleSubmit(event)">
+				<label>Âge</label>
+				<input type="text" class="age" placeholder="ex: 40" />
+				<label>Taille (en centimètres)</label>
+				<input type="text" class="taille" placeholder="175" />
+				<label>Poids (en kg)</label>
+				<input type="text" class="poids" placeholder="80" />
+				<input type="submit" class="bouton" value="Calculer" />
+			</form>
+			<p class="imc"><span class="number"></span></p>
+		</div>
+		<div class="imc_result">
+			<h2>
+				<span class="before">Indice de masse corporelle (IMC)</span> -
+				Interprétation (d'après l'OMS)
+			</h2>
+			<p class="un">
+				<span class="before">Moins de 18,5</span> - Insuffisance
+				pondérale (maigreur)
+			</p>
+			<p class="deux">
+				<span class="before">18,5 à 25</span> - Corpulence normale
+			</p>
+			<p class="trois"><span class="before">25 à 30</span> - Surpoids</p>
+			<p class="quatre">
+				<span class="before">30 à 35</span> - Obésité modérée
+			</p>
+			<p class="cinq">
+				<span class="before">35 à 40</span> - Obésité sévère
+			</p>
+			<p class="six">
+				<span class="before">plus de 40</span> - Obésité morbide ou
+				massive
+			</p>
+		</div>
 
 		<script src="./JS/index.js"></script>
 	</body>
